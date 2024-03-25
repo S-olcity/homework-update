@@ -16,13 +16,14 @@ header{
     padding:0 0 30px 0;
 }
 .search-input{
-        background-color:#f9f7fe;
-        border:none;
-        border-radius:8px;
-        width:80%;
-        padding: 15px 20px;
-        font-size:16px;
-        color:rgba(39, 33, 66, 0.4);
+    background:#f9f7fe;
+    border:none;
+    border-radius:6px;
+    width:80%;
+    padding: 15px 20px;
+    font-size:16px;
+    color:rgba(39, 33, 66, 0.4);
+        
 
 }
 .button-input{
@@ -32,7 +33,7 @@ header{
   color:white;
   font-size:16px;
   border-radius:5px;
-  padding:15px 30px;  
+  padding:15px 20px;  
 }
 main{
     padding:30px 0px;
@@ -62,10 +63,12 @@ strong{
 }
 .temperature-container{
     display:flex;
+    justify-content: flex-end;
+    margin-top:-110px;
 }
 .weather-icon{
     margin-top:22px;
-    font-size:40px;
+    font-size:44px;
 
 
 }

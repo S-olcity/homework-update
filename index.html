@@ -7,37 +7,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 <link rel="stylesheet" href="src/index.css" />
-<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </head>
 <body>
     <div class="vanilla-app">
     <header>
-        <form clas="input-form">
-            <input type="search" placeholder="Enter a city" required clas="search-input" />
-            <input type="submit" value="Search" class="button-input"/>
+        <form clas="input-form" id="input-form-js">
+            <input type="search" placeholder="Enter a city" required  class="search-input"  id="search-input-js"/>
+            <input type="submit" value="Search" class="button-input" id="button-input-js"/>
         </form>
     </header>
     <main>
         <div weather-app-container>
-        <h1 class="search-city"> Paris</h1>
+        <h1 class="search-city" id="search-city-js"> Paris</h1>
         <p class="weather-details">
             saturday 14:55 , cloudy
             <br>
             humidity<strong>80% </strong> , wind:<strong> 3Km/h</strong>
-            <div class="temperature-container">
-            <div class="weather-icon"></div>  
-            <div class="weather-temperature">  11 </div>
-            <div class="weather-unit"> °c </div>
+            <div class="temperature-container" id="temperature-container-js">
+            <div class="weather-icon" id="weather-icon-js"></div>  
+            <div class="weather-temperature" id="weather-temperature-js">  11 </div>
+            <div class="weather-unit" id="weather-unit-js"> °c </div>
             </div>
         </p>
         </div>
     </main>
     <footer>
-        this is coded by
-        <a href="https://github.com/S-olcity"> Solane Adeba</a> is <a href="https://github.com/S-olcity/homework-update">an open source on Github</a> and <a href="https://sole-weather-app.netlify.app/" >hosted on Netlify</a>
+        This is coded by
+        <a href="https://github.com/S-olcity"> Solane Adeba</a> is an <a href="https://github.com/S-olcity/homework-update"> open source on Github</a> and <a href="https://sole-weather-app.netlify.app/" >hosted on Netlify</a>
 
     </footer>
-  </div>  
+  </div> 
+  <script src="src/index.js"></script>
 </body>
 </html>
