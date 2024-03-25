@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the vanilla weather app</title>
+    <title>solcity weather app</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -23,11 +23,11 @@
         <div weather-app-container>
         <h1 class="search-city" id="search-city-js"> Paris</h1>
         <p class="weather-details">
-            saturday 14:55 , cloudy
+           <span id="time-js"> saturday 14:55 </span>, <span id="description-js">cloudy </span>
             <br>
-            humidity<strong>80% </strong> , wind:<strong> 3Km/h</strong>
+            humidity<strong id="humidity-js">80 </strong> % , wind:<strong id="wind-js"> 3</strong>Km/h
             <div class="temperature-container" id="temperature-container-js">
-            <div class="weather-icon" id="weather-icon-js"></div>  
+            <div class="weather-icon"  id="weather-icon-js">☀️</div>  
             <div class="weather-temperature" id="weather-temperature-js">  11 </div>
             <div class="weather-unit" id="weather-unit-js"> °c </div>
             </div>
