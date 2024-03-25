@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the vanilla weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/index.css" />
 </head>
 <body>
+    <div class="vanilla-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city" required l/>
-            <input type="submit" value="Search" l>
+        <form clas="input-form">
+            <input type="search" placeholder="Enter a city" required clas="city-input" l/>
+            <input type="submit" value="Search" class="button-input"/>
         </form>
     </header>
     <main>
-        <h1> Paris</h1>
-        <p>
+        <div weather-app-container>
+        <h1 class="search-city"> Paris</h1>
+        <p class="weather-details">
             saturday 14:55 , cloudy
-            humidity<strong> </strong> , wind:<strong> </strong>
+            humidity<strong>80% </strong> , wind:<strong> 3Km/h</strong>
+            <div class="temperature-container">
+            <div class="weather-icon"></div>  
+            <div class="weather-temperature">  11 </div>
+            <div class="weather-unit"> °c </div>
+            </div>
         </p>
+        </div>
     </main>
     <footer>
         this is coded by
         <a href="https://github.com/S-olcity"> Solane Adeba</a> is <a href="https://github.com/S-olcity/homework-update">an open source on Github</a> and <a href="https://sole-weather-app.netlify.app/" >hosted on Netlify</a>
 
     </footer>
-    
+  </div>  
 </body>
 </html>
